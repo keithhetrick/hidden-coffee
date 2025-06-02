@@ -1,0 +1,11 @@
+# Docker/Tor hidden service
+/hidden_service/
+/var/lib/tor/hidden_service/
+hostname
+hs_ed25519_secret_key
+hs_ed25519_public_key
+
+# Common files
+*.log
+*.env
+*.zip

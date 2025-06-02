@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to the Hidden Coffee Spot</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #6f4e37, #c9a66b);
+        color: #fff9f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0.3em;
+        text-shadow: 1px 1px 5px #3b2f2f;
+      }
+      p {
+        font-size: 1.25rem;
+        margin: 0.5em 0 1.5em 0;
+        font-style: italic;
+        color: #f4e6d8cc;
+        text-shadow: 1px 1px 3px #3b2f2f;
+      }
+      img {
+        max-width: 220px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        margin-bottom: 1.5em;
+        transition: transform 0.3s ease;
+        cursor: default;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
+      button {
+        font-size: 1.5rem;
+        background: #c9a66b;
+        border: none;
+        border-radius: 12px;
+        padding: 0.6em 1.2em;
+        color: #3b2f2f;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease;
+        user-select: none;
+      }
+      button:hover {
+        background: #a8853f;
+      }
+      footer {
+        font-size: 0.9rem;
+        color: #d2c6b0cc;
+        margin-top: 2em;
+        font-weight: 300;
+        text-shadow: 1px 1px 2px #3b2f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Hidden Coffee Spot</h1>
+    <p>Your secret place for great brews ☕️</p>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/320px-A_small_cup_of_coffee.JPG"
+      alt="Cup of coffee"
+    />
+    <button id="brewBtn">☕ Click to Brew</button>
+    <footer>☕ Brewed with ❤️ inside Tor</footer>
+    <script>
+      const btn = document?.getElementById("brewBtn");
+      let brewed = false;
+      btn.addEventListener("click", () => {
+        brewed = !brewed;
+        btn.textContent = brewed ? "☕☕ Brewed!" : "☕ Click to Brew";
+      });
+    </script>
+  </body>
+</html>
