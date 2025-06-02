@@ -6,7 +6,7 @@ A minimalist, educational Tor Hidden Service built using Docker. It serves a sta
 
 ## 📸 Preview
 
-![Screenshot](./screenshot.png) <!-- Optional if you want to add a screenshot -->
+<img width="1721" alt="Screen Shot 2025-06-01 at 9 30 30 PM" src="https://github.com/user-attachments/assets/4329c162-88d7-42e9-a07d-afea5fcb82b2" /> <!-- Optional if you want to add a screenshot -->
 
 ---
 
