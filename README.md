@@ -62,7 +62,8 @@ This will:
 ### 4. Once the container is running, open another terminal and run:
 
 ```bash
-docker exec hidden-coffee-tor cat /var/lib/tor/hidden_service/hostname
+docker exec hidden-coffee cat /var/lib/tor/hidden_service/hostname
+
 ```
 
 You’ll see an address like:
