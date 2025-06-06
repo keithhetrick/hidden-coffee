@@ -94,7 +94,7 @@ Paste the `.onion` address into the Tor Browser address bar — and voilà: Hidd
 ## 🛑 Stop the Service
 
 ```bash
-docker-compose down
+docker stop hidden-coffee
 ```
 
 This will stop and remove the container. If you’re not using persistence, the `.onion` address will change the next time you run it.
