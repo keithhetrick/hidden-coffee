@@ -1,8 +1,9 @@
+# Use the latest stable Debian slim image
 FROM debian:bullseye-slim
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y tor nginx && \
+    apt-get install -y --no-install-recommends tor nginx && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -11,4 +12,4 @@ COPY index.html /var/www/html/index.html
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-CMD tor & nginx
+CMD ["nginx", "-g", "daemon off;"]
