@@ -1,6 +1,5 @@
 # Use the latest stable Debian slim image
-# explain the difference between bullseye and bookworm 
-FROM debian:bullseye-slim 
+FROM debian:bookworm-slim
 
 RUN apt-get update && \
     apt-get upgrade -y && \
